@@ -13,7 +13,7 @@ export class AppComponent {
 
   onSubmit() {
     this.submitted = true;
-    const isAnAdult = this.model.age && this.model.age > 18;
+    const isAnAdult = this.model.age && this.model.age >= 18;
     if(isAnAdult){
       this.drink = "🍺" ;
     }
